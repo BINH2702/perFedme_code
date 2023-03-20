@@ -86,3 +86,5 @@ if __name__ == "__main__":
         optimizer= args.optimizer,
         numusers = args.numusers
     )
+
+print("binh")
