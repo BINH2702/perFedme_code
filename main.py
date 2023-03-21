@@ -11,7 +11,7 @@ from fedl.servers.serverapfl import APFL
 from fedl.servers.serverpsnl import Persionalized
 from fedl.servers.serverperavg import PerAvg
 from fedl.trainmodel.models import Mclr_Logistic, Net, Mclr_CrossEntropy
-from utils.plot_utils import plot_summary_one_figure
+# from utils.plot_utils import plot_summary_one_figures
 import torch
 
 torch.manual_seed(0)
@@ -43,8 +43,8 @@ def main(dataset, algorithm, model, batch_size, learning_rate, alpha, lamda, num
         server.test()
 
     # plot the result:
-    plot_summary_one_figure(num_users=numusers, loc_ep1=[local_epochs], Numb_Glob_Iters=num_glob_iters, lamb=[lamda],
-                               learning_rate=[learning_rate], alpha = [alpha], algorithms_list=[algorithm], batch_size=[batch_size], dataset=dataset)
+    # plot_summary_one_figure(num_users=numusers, loc_ep1=[local_epochs], Numb_Glob_Iters=num_glob_iters, lamb=[lamda],
+    #                            learning_rate=[learning_rate], alpha = [alpha], algorithms_list=[algorithm], batch_size=[batch_size], dataset=dataset)
 
 
 if __name__ == "__main__":
@@ -87,4 +87,5 @@ if __name__ == "__main__":
         numusers = args.numusers
     )
 
-print("binh")
+# print("binh")
+print('sth')
