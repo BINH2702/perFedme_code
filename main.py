@@ -88,4 +88,5 @@ if __name__ == "__main__":
     )
 
 # print("binh")
-print('sth')
+# print('sth')
+print(test_3)
